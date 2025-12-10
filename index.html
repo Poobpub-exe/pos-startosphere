@@ -1773,18 +1773,7 @@
         // ข้อมูลตัวอย่าง
         const sampleData = {
             products: [
-                { id: 1, name: "น้ำดื่ม", price: 10, cost: 5, image: "https://via.placeholder.com/80x80?text=น้ำดื่ม", category: "เครื่องดื่ม", stock: 50, lowStock: 10 },
-                { id: 2, name: "ขนมปัง", price: 25, cost: 15, image: "https://via.placeholder.com/80x80?text=ขนมปัง", category: "อาหาร", stock: 30, lowStock: 5 },
-                { id: 3, name: "นม UHT", price: 15, cost: 10, image: "https://via.placeholder.com/80x80?text=นม+UHT", category: "เครื่องดื่ม", stock: 40, lowStock: 10 },
-                { id: 4, name: "กาแฟ", price: 35, cost: 20, image: "https://via.placeholder.com/80x80?text=กาแฟ", category: "เครื่องดื่ม", stock: 20, lowStock: 5 },
-                { id: 5, name: "บะหมี่กึ่งสำเร็จรูป", price: 8, cost: 5, image: "https://via.placeholder.com/80x80?text=บะหมี่", category: "อาหาร", stock: 60, lowStock: 10 },
-                { id: 6, name: "น้ำอัดลม", price: 20, cost: 12, image: "https://via.placeholder.com/80x80?text=น้ำอัดลม", category: "เครื่องดื่ม", stock: 35, lowStock: 5 },
-                { id: 7, name: "ช็อกโกแลต", price: 15, cost: 8, image: "https://via.placeholder.com/80x80?text=ช็อกโกแลต", category: "ขนม", stock: 25, lowStock: 5 },
-                { id: 8, name: "มันฝรั่งทอด", price: 20, cost: 12, image: "https://via.placeholder.com/80x80?text=มันฝรั่งทอด", category: "ขนม", stock: 30, lowStock: 5 },
-                { id: 9, name: "ลูกอม", price: 5, cost: 2, image: "https://via.placeholder.com/80x80?text=ลูกอม", category: "ขนม", stock: 100, lowStock: 20 },
-                { id: 10, name: "น้ำผลไม้", price: 25, cost: 15, image: "https://via.placeholder.com/80x80?text=น้ำผลไม้", category: "เครื่องดื่ม", stock: 15, lowStock: 5 },
-                { id: 11, name: "ข้าวกล่อง", price: 45, cost: 25, image: "https://via.placeholder.com/80x80?text=ข้าวกล่อง", category: "อาหาร", stock: 10, lowStock: 3 },
-                { id: 12, name: "ซาลาเปา", price: 20, cost: 10, image: "https://via.placeholder.com/80x80?text=ซาลาเปา", category: "อาหาร", stock: 0, lowStock: 5 }
+                { id: 1, name: "น้ำดื่ม", price: 10, cost: 5, image: "https://cdn.discordapp.com/attachments/1422444489166815435/1448215049423425646/d68638208391099f2dc353bffc6ab717.png?ex=693a72de&is=6939215e&hm=fc329a66fbe8f0bcc32ebac6baf89774b34fe3fe058f23f2a2172982fc8ceaa0&", category: "เครื่องดื่ม", stock: 50, lowStock: 10 },
             ],
             categories: ["ทั้งหมด", "เครื่องดื่ม", "อาหาร", "ขนม"],
             users: [],
@@ -1914,29 +1903,49 @@
         }
 
         // บันทึกข้อมูลลง LocalStorage
-        function saveAppData() {
-            console.log('Saving data to localStorage...');
-            
-            const dataToSave = {
-                products: appState.products,
-                users: appState.users,
-                logs: appState.logs,
-                sales: appState.sales,
-                members: appState.members,
-                discountCodes: appState.discountCodes,
-                qrCodes: appState.qrCodes,
-                settings: appState.settings,
-                lastSaved: new Date().toISOString()
-            };
+// ในไฟล์ index.html: ค้นหาและแทนที่ฟังก์ชัน saveAppData()
+async function saveAppData() {
+    console.log('--- Attempting to save data to server ---');
+    
+    // 1. เตรียมข้อมูลทั้งหมดใน appState ที่ต้องการบันทึก
+    const dataToSave = {
+        products: appState.products,
+        users: appState.users,
+        logs: appState.logs,
+        sales: appState.sales,
+        members: appState.members,
+        discountCodes: appState.discountCodes,
+        qrCodes: appState.qrCodes,
+        settings: appState.settings
+    };
 
-            try {
-                localStorage.setItem('posData', JSON.stringify(dataToSave));
-                console.log('Data saved to localStorage');
-            } catch (error) {
-                console.error('Error saving data to localStorage:', error);
-                showNotification('บันทึกข้อมูลล้มเหลว', 'error');
-            }
+    try {
+        // 2. ใช้ URL แบบ Relative ('/api/data') ซึ่งถูกต้องแล้ว
+        const response = await fetch('/api/data', {
+            method: 'POST', 
+            headers: {
+                'Content-Type': 'application/json' 
+            },
+            body: JSON.stringify(dataToSave) 
+        });
+
+        const result = await response.json();
+
+        if (response.ok) {
+            console.log('✅ Data saved successfully to server. Response:', result);
+            // เพิ่มการแจ้งเตือนเล็กน้อย
+            showNotification('บันทึกข้อมูลสำเร็จ', 'success'); 
+        } else {
+            console.error('❌ Failed to save data to server. Status:', response.status, 'Message:', result.message);
+            showNotification(`บันทึกข้อมูลล้มเหลว: ${result.message} (Code: ${response.status})`, 'error');
         }
+    } catch (error) {
+        // 3. การดักจับ Error สำคัญมาก หากเชื่อมต่อไม่ได้เลยจะมาที่นี่
+        console.error('🔥 Error connecting to backend for saving:', error);
+        showNotification('ไม่สามารถเชื่อมต่อเซิร์ฟเวอร์เพื่อบันทึกข้อมูลได้', 'error');
+    }
+             console.log('--- Save attempt finished ---');
+        }   
 
         // แสดงการแจ้งเตือน
         function showNotification(message, type = 'success') {
