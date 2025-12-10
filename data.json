@@ -1,0 +1,513 @@
+{
+    "products": [
+        {
+            "id": 1765302131000,
+            "name": "arnon",
+            "price": 20,
+            "cost": 10,
+            "category": "เครื่องดื่ม",
+            "stock": 49,
+            "lowStock": 5,
+            "image": "https://cdn.discordapp.com/attachments/1422430367213948935/1446793845852471396/image.png?ex=69393bc4&is=6937ea44&hm=d5fee28b827ea592c84ff06eab875de19fd8e5c01d1b51bdeb126f4f88f0d2d9&"
+        }
+    ],
+    "users": [],
+    "logs": [
+        {
+            "id": 1765351971465,
+            "action": "ขายสินค้า",
+            "user": "แอดมิน",
+            "details": "ขายสินค้า S971465 จำนวน 20 บาท (พร้อมเพย์)",
+            "timestamp": "2025-12-10 07:32:51"
+        },
+        {
+            "id": 1765304917667,
+            "action": "แก้ไขสินค้า",
+            "user": "แอดมิน",
+            "details": "แก้ไขสินค้า 'arnon'",
+            "timestamp": "2025-12-09 18:28:37"
+        },
+        {
+            "id": 1765304912798,
+            "action": "ลบสินค้า",
+            "user": "แอดมิน",
+            "details": "ลบสินค้า 'ซาลาเปา'",
+            "timestamp": "2025-12-09 18:28:32"
+        },
+        {
+            "id": 1765304909650,
+            "action": "ลบสินค้า",
+            "user": "แอดมิน",
+            "details": "ลบสินค้า 'ข้าวกล่อง'",
+            "timestamp": "2025-12-09 18:28:29"
+        },
+        {
+            "id": 1765304908349,
+            "action": "ลบสินค้า",
+            "user": "แอดมิน",
+            "details": "ลบสินค้า 'น้ำผลไม้'",
+            "timestamp": "2025-12-09 18:28:28"
+        },
+        {
+            "id": 1765304906933,
+            "action": "ลบสินค้า",
+            "user": "แอดมิน",
+            "details": "ลบสินค้า 'ลูกอม'",
+            "timestamp": "2025-12-09 18:28:26"
+        },
+        {
+            "id": 1765304905697,
+            "action": "ลบสินค้า",
+            "user": "แอดมิน",
+            "details": "ลบสินค้า 'มันฝรั่งทอด'",
+            "timestamp": "2025-12-09 18:28:25"
+        },
+        {
+            "id": 1765304904365,
+            "action": "ลบสินค้า",
+            "user": "แอดมิน",
+            "details": "ลบสินค้า 'ช็อกโกแลต'",
+            "timestamp": "2025-12-09 18:28:24"
+        },
+        {
+            "id": 1765304902885,
+            "action": "ลบสินค้า",
+            "user": "แอดมิน",
+            "details": "ลบสินค้า 'น้ำอัดลม'",
+            "timestamp": "2025-12-09 18:28:22"
+        },
+        {
+            "id": 1765304901177,
+            "action": "ลบสินค้า",
+            "user": "แอดมิน",
+            "details": "ลบสินค้า 'บะหมี่กึ่งสำเร็จรูป'",
+            "timestamp": "2025-12-09 18:28:21"
+        },
+        {
+            "id": 1765304899935,
+            "action": "ลบสินค้า",
+            "user": "แอดมิน",
+            "details": "ลบสินค้า 'กาแฟ'",
+            "timestamp": "2025-12-09 18:28:19"
+        },
+        {
+            "id": 1765304898583,
+            "action": "ลบสินค้า",
+            "user": "แอดมิน",
+            "details": "ลบสินค้า 'นม UHT'",
+            "timestamp": "2025-12-09 18:28:18"
+        },
+        {
+            "id": 1765304897291,
+            "action": "ลบสินค้า",
+            "user": "แอดมิน",
+            "details": "ลบสินค้า 'ขนมปัง'",
+            "timestamp": "2025-12-09 18:28:17"
+        },
+        {
+            "id": 1765304895704,
+            "action": "ลบสินค้า",
+            "user": "แอดมิน",
+            "details": "ลบสินค้า 'น้ำดื่ม'",
+            "timestamp": "2025-12-09 18:28:15"
+        },
+        {
+            "id": 1765304750457,
+            "action": "ขายสินค้า",
+            "user": "แอดมิน",
+            "details": "ขายสินค้า S750457 จำนวน 60 บาท (พร้อมเพย์)",
+            "timestamp": "2025-12-09 18:25:50"
+        },
+        {
+            "id": 1765304738191,
+            "action": "แก้ไขสินค้า",
+            "user": "แอดมิน",
+            "details": "แก้ไขสินค้า 'ซาลาเปา'",
+            "timestamp": "2025-12-09 18:25:38"
+        },
+        {
+            "id": 1765304717203,
+            "action": "ขายสินค้า",
+            "user": "แอดมิน",
+            "details": "ขายสินค้า S717203 จำนวน 100 บาท (พร้อมเพย์)",
+            "timestamp": "2025-12-09 18:25:17"
+        },
+        {
+            "id": 1765304278776,
+            "action": "ขายสินค้า",
+            "user": "แอดมิน",
+            "details": "ขายสินค้า S278776 จำนวน 5 บาท (พร้อมเพย์)",
+            "timestamp": "2025-12-09 18:17:58"
+        },
+        {
+            "id": 1765302157282,
+            "action": "ขายสินค้า",
+            "user": "แอดมิน",
+            "details": "ขายสินค้า S157282 จำนวน 200 บาท (เงินสด)",
+            "timestamp": "2025-12-09 17:42:37"
+        },
+        {
+            "id": 1765302131000,
+            "action": "เพิ่มสินค้า",
+            "user": "แอดมิน",
+            "details": "เพิ่มสินค้า 'arnon'",
+            "timestamp": "2025-12-09 17:42:11"
+        },
+        {
+            "id": 1765302068868,
+            "action": "ขายสินค้า",
+            "user": "แอดมิน",
+            "details": "ขายสินค้า S068868 จำนวน 80 บาท (พร้อมเพย์)",
+            "timestamp": "2025-12-09 17:41:08"
+        },
+        {
+            "id": 1765302062987,
+            "action": "ขายสินค้า",
+            "user": "แอดมิน",
+            "details": "ขายสินค้า S062987 จำนวน 160 บาท (พร้อมเพย์)",
+            "timestamp": "2025-12-09 17:41:02"
+        },
+        {
+            "id": 1,
+            "action": "ขายสินค้า",
+            "user": "พนักงาน",
+            "details": "ขายสินค้า S001 จำนวน 65 บาท",
+            "timestamp": "2023-10-01 10:30:00"
+        },
+        {
+            "id": 2,
+            "action": "เพิ่มสินค้า",
+            "user": "แอดมิน",
+            "details": "เพิ่มสินค้า 'น้ำดื่ม'",
+            "timestamp": "2023-10-01 11:15:00"
+        },
+        {
+            "id": 3,
+            "action": "ขายสินค้า",
+            "user": "พนักงาน",
+            "details": "ขายสินค้า S002 จำนวน 40 บาท",
+            "timestamp": "2023-10-01 14:20:00"
+        },
+        {
+            "id": 4,
+            "action": "แก้ไขสินค้า",
+            "user": "แอดมิน",
+            "details": "แก้ไขราคาสินค้า 'กาแฟ' เป็น 35 บาท",
+            "timestamp": "2023-10-02 09:45:00"
+        }
+    ],
+    "sales": [
+        {
+            "id": "S971465",
+            "date": "2025-12-10",
+            "items": 1,
+            "total": 20,
+            "cost": 10,
+            "profit": 10,
+            "discount": 0,
+            "finalTotal": 20,
+            "payment": "promptpay",
+            "user": "แอดมิน",
+            "cart": [
+                {
+                    "id": 1765302131000,
+                    "name": "arnon",
+                    "price": 20,
+                    "cost": 10,
+                    "image": "https://cdn.discordapp.com/attachments/1422430367213948935/1446793845852471396/image.png?ex=69393bc4&is=6937ea44&hm=d5fee28b827ea592c84ff06eab875de19fd8e5c01d1b51bdeb126f4f88f0d2d9&",
+                    "quantity": 1
+                }
+            ],
+            "member": null,
+            "discountCode": null,
+            "pointsUsed": 0
+        },
+        {
+            "id": "S750457",
+            "date": "2025-12-09",
+            "items": 3,
+            "total": 60,
+            "cost": 36,
+            "profit": 24,
+            "discount": 0,
+            "finalTotal": 60,
+            "payment": "promptpay",
+            "user": "แอดมิน",
+            "cart": [
+                {
+                    "id": 8,
+                    "name": "มันฝรั่งทอด",
+                    "price": 20,
+                    "cost": 12,
+                    "image": "https://via.placeholder.com/80x80?text=มันฝรั่งทอด",
+                    "quantity": 3
+                }
+            ],
+            "member": null,
+            "discountCode": null,
+            "pointsUsed": 0
+        },
+        {
+            "id": "S717203",
+            "date": "2025-12-09",
+            "items": 4,
+            "total": 100,
+            "cost": 60,
+            "profit": 40,
+            "discount": 0,
+            "finalTotal": 100,
+            "payment": "promptpay",
+            "user": "แอดมิน",
+            "cart": [
+                {
+                    "id": 2,
+                    "name": "ขนมปัง",
+                    "price": 25,
+                    "cost": 15,
+                    "image": "https://via.placeholder.com/80x80?text=ขนมปัง",
+                    "quantity": 4
+                }
+            ],
+            "member": null,
+            "discountCode": null,
+            "pointsUsed": 0
+        },
+        {
+            "id": "S278776",
+            "date": "2025-12-09",
+            "items": 1,
+            "total": 5,
+            "cost": 2,
+            "profit": 3,
+            "discount": 0,
+            "finalTotal": 5,
+            "payment": "promptpay",
+            "user": "แอดมิน",
+            "cart": [
+                {
+                    "id": 9,
+                    "name": "ลูกอม",
+                    "price": 5,
+                    "cost": 2,
+                    "image": "https://via.placeholder.com/80x80?text=ลูกอม",
+                    "quantity": 1
+                }
+            ],
+            "member": null,
+            "discountCode": null,
+            "pointsUsed": 0
+        },
+        {
+            "id": "S157282",
+            "date": "2025-12-09",
+            "items": 10,
+            "total": 200,
+            "cost": 100,
+            "profit": 100,
+            "discount": 0,
+            "finalTotal": 200,
+            "payment": "cash",
+            "user": "แอดมิน",
+            "cart": [
+                {
+                    "id": 1765302131000,
+                    "name": "arnon",
+                    "price": 20,
+                    "cost": 10,
+                    "image": "https://cdn.discordapp.com/attachments/1422430367213948935/1446793845852471396/image.png?ex=69393bc4&is=6937ea44&hm=d5fee28b827ea592c84ff06eab875de19fd8e5c01d1b51bdeb126f4f88f0d2d9&",
+                    "quantity": 10
+                }
+            ],
+            "member": null,
+            "discountCode": null,
+            "pointsUsed": 0
+        },
+        {
+            "id": "S068868",
+            "date": "2025-12-09",
+            "items": 4,
+            "total": 80,
+            "cost": 48,
+            "profit": 32,
+            "discount": 0,
+            "finalTotal": 80,
+            "payment": "promptpay",
+            "user": "แอดมิน",
+            "cart": [
+                {
+                    "id": 8,
+                    "name": "มันฝรั่งทอด",
+                    "price": 20,
+                    "cost": 12,
+                    "image": "https://via.placeholder.com/80x80?text=มันฝรั่งทอด",
+                    "quantity": 4
+                }
+            ],
+            "member": null,
+            "discountCode": null,
+            "pointsUsed": 0
+        },
+        {
+            "id": "S062987",
+            "date": "2025-12-09",
+            "items": 6,
+            "total": 160,
+            "cost": 90,
+            "profit": 70,
+            "discount": 0,
+            "finalTotal": 160,
+            "payment": "promptpay",
+            "user": "แอดมิน",
+            "cart": [
+                {
+                    "id": 1,
+                    "name": "น้ำดื่ม",
+                    "price": 10,
+                    "cost": 5,
+                    "image": "https://via.placeholder.com/80x80?text=น้ำดื่ม",
+                    "quantity": 2
+                },
+                {
+                    "id": 4,
+                    "name": "กาแฟ",
+                    "price": 35,
+                    "cost": 20,
+                    "image": "https://via.placeholder.com/80x80?text=กาแฟ",
+                    "quantity": 4
+                }
+            ],
+            "member": null,
+            "discountCode": null,
+            "pointsUsed": 0
+        },
+        {
+            "id": "S001",
+            "date": "2023-10-01",
+            "items": 3,
+            "total": 65,
+            "cost": 35,
+            "profit": 30,
+            "payment": "cash",
+            "user": "พนักงาน",
+            "discount": 0,
+            "finalTotal": 65
+        },
+        {
+            "id": "S002",
+            "date": "2023-10-01",
+            "items": 2,
+            "total": 40,
+            "cost": 22,
+            "profit": 18,
+            "payment": "cash",
+            "user": "พนักงาน",
+            "discount": 0,
+            "finalTotal": 40
+        },
+        {
+            "id": "S003",
+            "date": "2023-10-02",
+            "items": 5,
+            "total": 95,
+            "cost": 52,
+            "profit": 43,
+            "payment": "promptpay",
+            "user": "แอดมิน",
+            "discount": 5,
+            "finalTotal": 90
+        },
+        {
+            "id": "S004",
+            "date": "2023-10-02",
+            "items": 1,
+            "total": 15,
+            "cost": 10,
+            "profit": 5,
+            "payment": "cash",
+            "user": "พนักงาน",
+            "discount": 0,
+            "finalTotal": 15
+        }
+    ],
+    "members": [
+        {
+            "id": 1,
+            "code": "M001",
+            "name": "สมชาย ใจดี",
+            "phone": "089-111-1111",
+            "discount": 5,
+            "points": 100,
+            "created": "2023-01-15"
+        },
+        {
+            "id": 2,
+            "code": "M002",
+            "name": "สมหญิง รักดี",
+            "phone": "089-222-2222",
+            "discount": 10,
+            "points": 200,
+            "created": "2023-02-20"
+        },
+        {
+            "id": 3,
+            "code": "M003",
+            "name": "สมปอง ตั้งใจ",
+            "phone": "089-333-3333",
+            "discount": 15,
+            "points": 300,
+            "created": "2023-03-10"
+        }
+    ],
+    "discountCodes": [
+        {
+            "id": 1,
+            "code": "SAVE10",
+            "discount": 10,
+            "type": "percent",
+            "minAmount": 100,
+            "maxUses": 100,
+            "usedCount": 5,
+            "expiryDate": "2023-12-31",
+            "active": true
+        },
+        {
+            "id": 2,
+            "code": "SAVE50",
+            "discount": 50,
+            "type": "fixed",
+            "minAmount": 200,
+            "maxUses": 50,
+            "usedCount": 2,
+            "expiryDate": "2023-11-30",
+            "active": true
+        },
+        {
+            "id": 3,
+            "code": "WELCOME",
+            "discount": 20,
+            "type": "percent",
+            "minAmount": 0,
+            "maxUses": null,
+            "usedCount": 10,
+            "expiryDate": null,
+            "active": true
+        }
+    ],
+    "qrCodes": [
+        {
+            "id": 1,
+            "name": "พร้อมเพย์หลัก",
+            "phone": "0988722639",
+            "image": "",
+            "active": true
+        }
+    ],
+    "settings": {
+        "shopName": "Startosphere",
+        "shopPhone": "0988722639",
+        "shopAddress": "ระยอง",
+        "openTime": "08:00",
+        "closeTime": "20:00",
+        "shopLogo": ""
+    }
+}
